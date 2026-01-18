@@ -1,0 +1,38 @@
+{	
+	"file": {
+		"in_dir": "data/32f_180.nii",
+		"out_dir": "output",
+		"model_dir": "model/DemoModel.pth"
+	},
+	"data": {
+		"struc_in": "fanbeam",
+		"SOD": 410, 
+		"ODD": 210,
+		"voxel_size": 0.2
+	},
+	"train":{
+		"lr": 1e-3,
+		"epoch": 1500,
+		"gpu": 0,
+		"summary_epoch": 500,
+		"sample_N": 10,
+		"batch_size": 3
+	},
+	"encoding": {
+		"otype": "Grid",
+		"type": "Hash",
+		"n_levels": 8,
+		"n_features_per_level": 8,
+		"log2_hashmap_size": 24,
+		"base_resolution": 2,
+		"per_level_scale": 1.95,
+		"interpolation": "Linear"
+	},
+	"network": {
+		"otype": "FullyFusedMLP",
+		"activation": "LeakyReLU",
+		"output_activation": "None",
+		"n_neurons": 64,
+		"n_hidden_layers": 2
+	}
+}
