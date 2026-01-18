@@ -174,12 +174,12 @@ def ray_affine_z_shift(ray_coords,shift):
 # This operates at O(n), while ray affine generators are O(n^2), though the performance boost literally doesn't matter.
 
 # CBs will just be the 3D version of this. For UNC students and faculty only, contact me if you cannot understand this. 
-# I will create a demonstrator Jupyter code to explain this. This comment is dated 01/16/2026. 
-# Check back about in a week or 2 for Jupyter demonstrator. 
+# Check the linked Google Colab notebook in ReadMe for a very brief explanation of this. 
 
 def fanbeam_geometric_transform(ray_coords, unit_tangent, L, SOD, ODD):
     x_max   =   (L-1)/2
     slope   =   unit_tangent*x_max
     vec_transform   =   ray_coords[:,:,1]*slope + slope*SOD/ODD
     ray_coords[:,:,0] =   np.multiply(vec_transform,ray_coords[:,:,0])
+
     return ray_coords
