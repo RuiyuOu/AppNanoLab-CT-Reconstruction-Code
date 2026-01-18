@@ -1,6 +1,6 @@
 {	
 	"file": {
-		"in_dir": "data/32f_180.nii",
+		"in_dir": "data/32f_120.nii",
 		"out_dir": "output",
 		"model_dir": "model/DemoModel.pth"
 	},
@@ -16,7 +16,7 @@
 		"gpu": 0,
 		"summary_epoch": 500,
 		"sample_N": 10,
-		"batch_size": 2
+		"batch_size": 3
 	},
 	"encoding": {
 		"otype": "Grid",
@@ -37,3 +37,4 @@
 	}
 
 }
+
