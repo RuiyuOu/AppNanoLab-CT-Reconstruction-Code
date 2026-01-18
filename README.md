@@ -1,0 +1,1 @@
+Check out the Google Colab Jupyter Notebook for a brief introduction to the quirks of the model and the code working in action. https://colab.research.google.com/drive/1dzX-kz2E1_JqwX_51bSDkPsl7jCNTIAt?usp=sharing
